@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-#navBar {
+nav {
   background-color: #0070cd;
 }
 
@@ -336,24 +336,43 @@
 }
 /**************** end part2 ******************/
 /**************** start part3 ******************/
-#carsour {
-  display: flex;
-  opacity: inherit;
-  color: #6f7072;
-}
-#carsour div {
+#carousel div {
   cusror: pointer;
+  opacity: 1;
 }
-#carsour h5 {
+#carousel h5 {
   font-size: 1.8em;
 }
-#carsour span:first-child {
+#carousel span:first-child {
   text-decoration: line-through;
   padding-left: 0.5em;
   color: #dbd9d9;
 }
-#carsour span:nth-child(2) {
+#carousel span:nth-child(2) {
   color: #0070cd;
+}
+
+#sliderBtn, #sliderBtn2 {
+  width: 3em;
+  height: 3em;
+  border: 1px solid #6f7072;
+  border-radius: 7px;
+}
+
+#sliderBtn {
+  top: 8em;
+  left: -4em;
+}
+#sliderBtn i {
+  color: #6f7072;
+}
+
+#sliderBtn2 {
+  top: 8em;
+  right: -4em;
+}
+#sliderBtn2 i {
+  color: #6f7072;
 }
 
 .part3logo img {
@@ -382,6 +401,10 @@
   .c {
     font-size: 1.8em;
     font-weight: bolder;
+  }
+
+  .cT {
+    font-size: 1.3em !important;
   }
 
   #carsour div div h5 {
@@ -583,5 +606,73 @@
   }
 }
 /**************** end part7 *******************/
+#reserve {
+  display: flex;
+  justify-content: start;
+  border: 1px solid #6f7072;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+#reserve div {
+  flex: 1;
+}
+#reserve button {
+  width: -webkit-fill-available;
+}
+#reserve button h5 {
+  text-align: justify;
+  color: #6f7072;
+}
+#reserve button h3 {
+  display: inline-block;
+  color: #0070cd;
+  margin-right: -3em;
+  margin-left: 1em;
+}
+#reserve button h3::after {
+  color: #6f7072;
+}
+
+.ulContainer {
+  display: flex;
+  text-align: initial;
+  padding: 1em;
+}
+.ulContainer .right li:first-child, .ulContainer .left li:first-child {
+  font-weight: bolder;
+  color: #6f7072;
+}
+.ulContainer .right li, .ulContainer .left li {
+  padding: 0.2em;
+}
+.ulContainer .right li a, .ulContainer .left li a {
+  color: #0070cd;
+  font-size: 1.2em;
+}
+.ulContainer .right li a:hover, .ulContainer .left li a:hover {
+  text-decoration: none;
+}
+
+.doc h5 {
+  color: #6f7072;
+}
+.doc h3 {
+  color: #0070cd;
+}
+
+.call1 {
+  margin-top: -8em;
+  padding: 0em 1em 0em 0em;
+}
+.call1 .c2 {
+  margin-left: 0em;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #reserve button h3 {
+    font-size: 1.3em;
+    margin-right: 0em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

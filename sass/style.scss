@@ -8,7 +8,7 @@ $lightGray: rgb(226, 230, 234);
     direction: rtl;
     box-sizing: border-box;
 }
-#navBar {
+nav {
     background-color: $navColor;
 }
 .navbar-toggler {
@@ -321,12 +321,10 @@ $lightGray: rgb(226, 230, 234);
 /**************** end part2 ******************/
 
 /**************** start part3 ******************/
-#carsour {
-    display: flex;
-    opacity: inherit;
-    color: $grayColor;
+#carousel {
     div {
-        cusror: pointer
+        cusror: pointer;
+        opacity: 1;
     }
     h5 {
         font-size: 1.8em;
@@ -338,6 +336,26 @@ $lightGray: rgb(226, 230, 234);
     }
     span:nth-child(2) {
         color: $navColor;
+    }
+}
+#sliderBtn , #sliderBtn2 {
+    width: 3em;
+    height: 3em;
+    border: 1px solid $grayColor;
+    border-radius: 7px;
+}
+#sliderBtn {
+    top: 8em;
+    left: -4em;
+    i {
+        color: $grayColor;
+    }
+}
+#sliderBtn2 {
+    top: 8em;
+    right: -4em;
+    i {
+        color: $grayColor;
     }
 }
 .part3logo img{
@@ -361,6 +379,9 @@ $lightGray: rgb(226, 230, 234);
     .c {
         font-size: 1.8em;
         font-weight: bolder;
+    }
+    .cT {
+        font-size: 1.3em !important;
     }
     #carsour div div h5 {
         font-size: 1.3em;
@@ -546,3 +567,76 @@ $lightGray: rgb(226, 230, 234);
 
 
 
+//test
+#reserve {
+    display: flex;
+    justify-content: start;
+    border: 1px solid $grayColor;
+    border-radius: 15px;
+    margin-top: 1em;
+    div {
+        flex: 1;
+    }
+    button {
+        width: -webkit-fill-available;;
+        h5 {
+            text-align: justify;
+            color: $grayColor;
+        }
+        h3 {
+            display: inline-block;
+            color: $navColor;
+            margin-right: -3em;
+            margin-left: 1em;
+            &::after {
+                color: $grayColor;
+            }
+        }
+    }
+}
+.ulContainer {
+    display: flex;
+    text-align: initial;
+    padding: 1em;
+    .right , .left {
+        li:first-child {
+            font-weight: bolder;
+            color: $grayColor;
+        }
+        li {
+            padding: .2em;
+            a {
+                color: $navColor;
+                font-size: 1.2em;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.doc {
+    h5 {
+        color: $grayColor;
+    }
+    h3 {
+        color: $navColor;
+    }
+}
+.call1 {
+    margin-top: -8em;
+    padding: 0em 1em 0em 0em;
+    .c2 {
+        margin-left: 0em;
+    }
+}
+@media all and(min-width: 768px) and (max-width:1023px)  {
+    #reserve {
+        button {
+            h3 {
+                font-size: 1.3em;
+                margin-right: 0em;
+            }
+        }
+    }
+}
